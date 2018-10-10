@@ -1,2 +1,10 @@
 ---
-# handlers file for tomcat7
+# handlers file for mytom7installrole
+- name: tomstart
+  service:
+    name: tomcat
+    state: started
+- name: tomrestart
+  service:
+    name: tomcat
+    state: restarted
